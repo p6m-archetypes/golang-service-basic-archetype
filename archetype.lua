@@ -18,7 +18,7 @@ context:prompt_text("Go Module Path:", "module_path", {
 })
 
 -- Service configuration
-require("ports").prompt(context, { help = "HTTP port for the service" })
+require("ports").prompt(context, { ports = { { "service", help = "HTTP port for the service" }, "management", "debug" } })
 
 -- EditorConfig + gitignore (pre-seeded; library skips interactive prompt)
 local editor_config = require("editor-config")

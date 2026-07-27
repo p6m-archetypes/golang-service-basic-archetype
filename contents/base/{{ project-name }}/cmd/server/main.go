@@ -12,6 +12,7 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+
 	"{{ module_path }}/internal/config"
 	"{{ module_path }}/internal/handler"
 )
